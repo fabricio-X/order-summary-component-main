@@ -98,6 +98,11 @@ body {
     margin-right: auto;
 }
 
+.annual-plan strong {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
 .price {
     color: var(--desaturated-blue);
 }
@@ -126,6 +131,7 @@ button {
     border-radius: .5rem;
     box-shadow: 0 19px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transition: all 200ms;
 }
 
 .confirm-btn:hover {
@@ -138,6 +144,7 @@ button {
     font-weight: 700;
     font-size: .9rem;
     justify-self: end;
+    transition: all 200ms;
 }
 
 .cancel-btn:hover {
@@ -193,7 +200,7 @@ button {
         gap: .2rem;
     }
     
-    .annual-plan h4 {
+    .annual-plan strong {
         font-size: 1rem;
         color: var(--dark-blue);
         font-weight: 900;
@@ -266,7 +273,7 @@ button {
         gap: .25rem;
     }
     
-    .annual-plan h4 {
+    .annual-plan strong {
         font-size: .85rem;
     }
 
