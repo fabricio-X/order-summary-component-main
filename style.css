@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    --pale-blue: #e0e8ff;
+    --bright-blue: #3829e0;
+    --very-pale-blue: #f5f7ff;
+    --desaturated-blue: #7280a7;
+    --dark-blue: #1f2f56;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+    font-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card {
+    background-color: #fff;
+    width: 23rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    max-width: 95vw;
+}
+
+.card-hero {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+.card-title {
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin: 2rem 0 1rem 0;
+}
+
+.order-summary {
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: .92rem;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--very-pale-blue);
+    padding: .7rem;
+    border-radius: .5rem;
+    margin-bottom: 1.4rem;
+}
+
+.icon-music {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-music img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.annual-plan {
+    margin-right: auto;
+}
+
+.price {
+    color: var(--desaturated-blue);
+}
+
+.change-plan {
+    color: var(--bright-blue);
+}
+
+.change-plan:hover {
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.confirm-btn {
+    width: 100%;
+    border: 0;
+    padding: .7rem 0;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 700;
+    font-size: .8rem;
+    margin-bottom: 1.7rem;
+    border-radius: .5rem;
+    box-shadow: 0 19px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background-color: #766ef1;
+}
+
+.cancel-btn {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: .9rem;
+    justify-self: end;
+}
+
+.cancel-btn:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 375px) {
+    :root {
+        font-size: 90%;
+    }
+
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+
+    .card {
+        height: 80vh;
+        width: 87vw;
+        border-radius: 1.5rem;
+        
+    }
+    
+    .card-hero {
+        border-radius: 1.5rem 1.5rem 0 0;
+        margin-bottom: .1rem;
+    }
+    
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.7rem;
+    }
+
+    .card-title {
+        font-size: 1.54rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .order-summary {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        padding: 0 1rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .pricing {
+        padding: 1.3rem 1.1rem;
+    }
+
+    .annual-plan {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+    
+    .annual-plan h4 {
+        font-size: 1rem;
+        color: var(--dark-blue);
+        font-weight: 900;
+    }
+    
+    .change-plan {
+        font-size: .9rem;
+        color: var(--bright-blue);
+        font-weight: 700;
+    }
+    
+    .icon-music {
+        width: 3.3rem;
+        height: 3.3rem;
+        margin-right: 1.2rem;
+    }
+
+    .confirm-btn {
+        font-size: 1.1rem;
+        padding: 1rem;
+        border-radius: .8rem;
+    }
+
+    .cancel-btn {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    :root {
+        font-size: 120%;
+    }
+
+    .card {
+        width: 23.5rem;
+        height: 36.1rem;
+        box-shadow: 0 50px 50px -20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-hero {
+        margin-bottom: .36rem;
+    }
+
+    .card-title {
+        font-size: 1.45rem;
+    }
+
+    .order-summary {
+        font-size: .85rem;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+
+    .pricing {
+        padding: 1.2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .icon-music {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1.1rem;
+    }
+
+    .annual-plan {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+    
+    .annual-plan h4 {
+        font-size: .85rem;
+    }
+
+    .change-plan {
+        font-size: .75rem;
+        font-weight: 700;
+        color: var(--bright-blue);
+    }
+
+    .price {
+        font-size: .85rem;
+    }
+
+    .card-text {
+        padding: 0 2.53rem;
+    }
+
+    .cancel-btn {
+        font-size: .8rem;
+        font-weight: 900;
+    }
+}
