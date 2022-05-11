@@ -5,4 +5,4 @@ from [Frontend Mentor](https://www.frontendmentor.io/home).
 
 This challenge helped me a lot to improve my `flexbox`, `@media` and responsive CSS units skills.
 ## Final result: https://fabricio-x.github.io/order-summary-component-main/
-![Final result](./nft-site-screenshot.png)
+![Final result](./screenshot.png)
